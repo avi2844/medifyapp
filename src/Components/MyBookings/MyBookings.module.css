@@ -1,0 +1,16 @@
+.search{
+    position: relative;
+    top: 50px;
+    box-shadow: 6px 6px 35px 0px #1028511C;
+    height: 111px;
+}
+
+.medicalSection{
+    position: relative;
+    top : 100px;
+}
+
+.medicalCardSection{
+    position: relative;
+    top : 200px;
+}

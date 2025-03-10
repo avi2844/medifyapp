@@ -11,6 +11,7 @@ import Home from './Components/Home/Home'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MedicalCenterPage from './Components/MedicalCenterPage/MedicalCenterPage'
 import { SnackbarProvider } from 'notistack'
+import MyBookings from './Components/MyBookings/MyBookings'
 
 const theme = createTheme({
   typography:{
@@ -60,6 +61,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/medical-centers' element={<MedicalCenterPage />} />
+          <Route path='/my-bookings' element={<MyBookings />} />
         </Routes>
         </BrowserRouter>
         </SnackbarProvider>

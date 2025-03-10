@@ -117,6 +117,7 @@ function MedicalCenterPage() {
                 onChange={(event, newValue) => {
                   setSelectedState(newValue);
                 }}
+                id="state"
               renderInput={(params) => (
                 <TextField
                   {...params}
@@ -143,6 +144,7 @@ function MedicalCenterPage() {
                 onChange={(event, newValue) => {
                   setSelectedCity(newValue);
                 }}
+                id="state"
               renderInput={(params) => (
                 <TextField
                   {...params}
@@ -161,7 +163,7 @@ function MedicalCenterPage() {
                 />
               )}
             />
-            <Button variant="contained" size="large" startIcon={<SearchIcon />}>
+            <Button variant="contained" size="large" startIcon={<SearchIcon />} type="submit">
               Search
             </Button>
           </Stack>
@@ -174,7 +176,7 @@ function MedicalCenterPage() {
         <Container className={styles.medicalCardSection} maxWidth= 'xl' fontFamily={theme.typography.fontFamily}>
           {
             hospitals.map((ele) => (
-              <HospitalCard />
+              <HospitalCard key={ele['Provider ID']} hospitalName={ele['Hospital Name']} Address={ele.Address} City={ele.City} rating={ele['Hospital overall rating']} showButton={true}/>
             ))
           }
         </Container>

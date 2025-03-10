@@ -1,0 +1,12 @@
+.card{
+    
+border-radius: 15px;
+padding: 24px;
+gap: 14px;
+}
+
+.media{
+    width: 140px;
+height: 140px;
+
+}

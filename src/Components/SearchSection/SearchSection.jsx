@@ -108,6 +108,7 @@ function SearchSection() {
           onChange={(event, newValue) => {
             setSelectedState(newValue);
           }}
+          id="state"
           renderInput={(params) => (
             <TextField
               {...params}
@@ -135,6 +136,7 @@ function SearchSection() {
           onChange={(event, newValue) => {
             setSelectedCity(newValue);
           }}
+          id="city"
           renderInput={(params) => (
             <TextField
               {...params}
